@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Regular.eot');
+    src: local('Ivy Mode Regular'), local('IvyMode-Regular'),
+        url('IvyMode-Regular.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Regular.woff2') format('woff2'),
+        url('IvyMode-Regular.woff') format('woff'),
+        url('IvyMode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-LightItalic.eot');
+    src: local('Ivy Mode Light Italic'), local('IvyMode-LightItalic'),
+        url('IvyMode-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-LightItalic.woff2') format('woff2'),
+        url('IvyMode-LightItalic.woff') format('woff'),
+        url('IvyMode-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-SemiBoldItalic.eot');
+    src: local('Ivy Mode SemiBold Italic'), local('IvyMode-SemiBoldItalic'),
+        url('IvyMode-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-SemiBoldItalic.woff2') format('woff2'),
+        url('IvyMode-SemiBoldItalic.woff') format('woff'),
+        url('IvyMode-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-ThinItalic.eot');
+    src: local('Ivy Mode Thin Italic'), local('IvyMode-ThinItalic'),
+        url('IvyMode-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-ThinItalic.woff2') format('woff2'),
+        url('IvyMode-ThinItalic.woff') format('woff'),
+        url('IvyMode-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Italic.eot');
+    src: local('Ivy Mode Italic'), local('IvyMode-Italic'),
+        url('IvyMode-Italic.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Italic.woff2') format('woff2'),
+        url('IvyMode-Italic.woff') format('woff'),
+        url('IvyMode-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-BoldItalic.eot');
+    src: local('Ivy Mode Bold Italic'), local('IvyMode-BoldItalic'),
+        url('IvyMode-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-BoldItalic.woff2') format('woff2'),
+        url('IvyMode-BoldItalic.woff') format('woff'),
+        url('IvyMode-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Bold.eot');
+    src: local('Ivy Mode Bold'), local('IvyMode-Bold'),
+        url('IvyMode-Bold.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Bold.woff2') format('woff2'),
+        url('IvyMode-Bold.woff') format('woff'),
+        url('IvyMode-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Light.eot');
+    src: local('Ivy Mode Light'), local('IvyMode-Light'),
+        url('IvyMode-Light.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Light.woff2') format('woff2'),
+        url('IvyMode-Light.woff') format('woff'),
+        url('IvyMode-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Thin.eot');
+    src: local('Ivy Mode Thin'), local('IvyMode-Thin'),
+        url('IvyMode-Thin.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Thin.woff2') format('woff2'),
+        url('IvyMode-Thin.woff') format('woff'),
+        url('IvyMode-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-SemiBold.eot');
+    src: local('Ivy Mode SemiBold'), local('IvyMode-SemiBold'),
+        url('IvyMode-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-SemiBold.woff2') format('woff2'),
+        url('IvyMode-SemiBold.woff') format('woff'),
+        url('IvyMode-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+:root {
+    --orange: #FF6E4A;
+    --blue-green: #143D48;
+    --beige: #EADAC2;
+    --gunmetal: #22333B;
+  }
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+
+body{
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--beige);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 100px;
+    gap: 613px;
+    background-color: #143D48;
+    color: var(--orange);
+}
+
+.links {
+    padding: 1em;
+    color: var(--orange);
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.landing-page {
+    background-color: var(--blue-green);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 450px 100px;
+    gap: 38px;
+    height: 849px;
+}
+
+.intro {
+    color: var(--orange);
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+.logo {
+    font-family: 'Ivy Mode';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.self {
+    border: 1px solid var(--gunmetal);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 1000px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    color: var(--orange);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 300px;
+    
+}
+
+.last {
+    
+    padding-bottom: 2em;
+
+}
+.menu {
+    flex: 0 1 auto;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.recent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 100px;
+    background-color: var(--beige);
+    padding: 100px 0px;
+gap: 52px;
+}
+
+.project-showcase {
+    align-items: center;
+    padding: 0px;
+    gap: 139px;
+}
+
+.section-two-heading {
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--gunmetal);
+    
+}
+
+.buttons {
+    width: inherit;
+    justify-content: space-between;
+}
+
+
+.right-left-arrows {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.right-left-arrows:hover {
+    background-color: var(--gunmetal);
+    border-radius: 100%;
+}
+
+.container {
+    width: 60%;
+}
+
+.footer {
+    flex-direction: column;
+    padding: 50px 100px;
+    background-color: var(--gunmetal);
+    margin-top: auto;
+    color: var(--beige);
+    font-family: 'Lato', sans-serif;
+}
+
+.email {
+
+}
+
+.my-links {
+    align-self: flex-end;
+}
+
+.my-link {
+    
+    color: var(--beige);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 1em;
+}
+
+.title-open {
+    justify-content: center;
+    gap: 343px;
+    padding: 10px;
+}
+
+.open, .title {
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000;
+}
+
+.open:hover {
+    text-decoration: underline var(--blue-green);
+}
