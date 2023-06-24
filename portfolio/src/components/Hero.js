@@ -10,43 +10,53 @@ import behanceicon from "../assets/behance.svg";
 function Hero() {
   return (
     <section className="hero-section">
-      <div className="social-media_links">
-        <ul>
-          <li>
-            <a href="https://github.com/acdeguia">
-              <img src={githubicon} alt="github icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/acdeguia">
-              <img src={linkedinicon} alt="github icon" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/acdeguia">
-              <img src={behanceicon} alt="github icon" />
-            </a>
-          </li>
-        </ul>
-        <img src={verticalLine} alt="vertical-line-design"></img>
+      <div className="left-main">
+        <div className="social-media_links">
+          <ul>
+            <li>
+              <a href="https://github.com/acdeguia">
+                <img className="icons" src={githubicon} alt="github icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/acdeguia">
+                <img className="icons" src={linkedinicon} alt="github icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/acdeguia">
+                <img className="icons" src={behanceicon} alt="github icon" />
+              </a>
+            </li>
+          </ul>
+          <div className="vertical"></div>
+        </div>
+        <div className="hero-main">
+          <div>
+            <p>Hi, my name is</p>
+            <h1 className="underline">Ann Catherine</h1>
+          </div>
+          <p>
+            I’m an aspiring <span>Frontend Web Developer</span> and a{" "}
+            <span>UX/UI Designer</span> who is ambitious, passionate, and
+            committed to personal growth.
+          </p>
+          <button className="btn resume-btn"><span>Download Resume</span></button>
+          
+        </div>
       </div>
-      <div className="hero-main">
-        <p>Hi, my name is</p>
-        <p>Ann Catherine</p>
-        <p>
-          I’m an aspiring <span>Frontend Web Developer</span> and a{" "}
-          <span>UX/UI Designer</span> who is ambitious, passionate, and
-          committed to personal growth.
-        </p>
-        <button className="btn resume-btn">Download Resume</button>
-      </div>
-      <div className="image-container">
-        <img className="myImg" src={myImage} alt="myimage" />
-        {/* <div className='box-style'></div> */}
-      </div>
-      <div className="arrow-container">
-        <img src={arrowTail} alt="arrow" />
-        <img className="arrow-head" src={arrowHead} alt="arrow" />
+      
+      <div className="main-hero_right">
+        <div className="image-container">
+
+          <div className='box-style'></div>
+          <img className="myImg" src={myImage} alt="myimage" />
+        </div>
+        <div className="scroll-arrow">
+          <img src={arrowHead} alt="arrow" />
+          <img src={arrowHead} alt="arrow" />
+          <img src={arrowHead} alt="arrow" />
+        </div>
       </div>
     </section>
   );

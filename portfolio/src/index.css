@@ -46,6 +46,131 @@
     url("./assets/fonts/Justus-Bold.woff") format("woff");
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 :root {
   --primary-color: #e2e2e2;
   --bg-color: #333448;
@@ -68,29 +193,23 @@ code {
     monospace;
 }
 
-.image-container {
-  position: relative;
-}
-
-.box-style {
-  position: absolute;
-  border: 2px solid #ff6e4a;
-  width: 135px;
-  height: 135px;
-}
-
 .header,
 .header-li,
 .arrow-container,
 .app,
-#root {
+#root,
+.social-media_links,
+.social-media_links ul,
+.hero-section,
+.vertical,
+.hero-main,
+.left-main, .scroll-arrow {
   display: flex;
 }
 
 .app,
-#root {
-  justify-content: center;
-  align-items: center;
+#root,
+.social-media_links ul, .scroll-arrow  {
   flex-direction: column;
 }
 
@@ -114,9 +233,11 @@ li {
   font-size: 37.5px;
 }
 
+
+
 .header {
   justify-content: space-between;
-  padding: 0 300px;
+  padding: 50px 300px;
   align-items: center;
 }
 .header-li {
@@ -171,4 +292,158 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+/* HERO STYLES */
+
+.hero-section {
+  padding: 0 300px;
+  margin-top: 100px;
+}
+
+.social-media_links {
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  padding-top: 20px;
+}
+
+.icons {
+  height: 25px;
+  width: auto;
+}
+
+.social-media_links ul {
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.vertical {
+  width: 2px;
+  height: 234px;
+  background-color: var(--heading-color);
+  margin: 0 auto;
+}
+
+.hero-section {
+  justify-content: space-between;
+}
+
+.hero-main {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.left-main {
+  gap: 76px;
+}
+
+.hero-main p {
+  font-size: 30px;
+  font-family: Mulish;
+  line-height: 60px;
+  max-width: 660px;
+}
+
+.hero-main h1 {
+  font-size: 73.24px;
+  font-family: "Justus Versalitas";
+  color: var(--heading-color);
+}
+
+.btn {
+  border-radius: 2px;
+  border: 2px solid var(--heading-color);
+  width: fit-content;
+  background-color: transparent;
+}
+
+.resume-btn {
+  height: 80px;
+  color: var(--primary-color);
+  font-size: 30px;
+  font-family: Mulish;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.resume-btn:hover {
+  background-color: var(--heading-color);
+  color: var(--bg-color);
+}
+
+.image-container {
+  position: relative;
+}
+
+
+.box-style {
+  position: absolute;
+  border: 2px solid #ff6e4a;
+  width: 135px;
+  height: 135px;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+}
+
+.main-hero_right {
+  position: relative;
+}
+
+
+@keyframes scrollArrow {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  top: 75%;
+  right: 25%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  animation: scrollArrow 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: calc(100% - 2em); 
+  }
+  100% {
+    width: calc(100% - 2em); 
+  }
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--heading-color);
+  animation: underline 2s ease-in-out forwards;
 }
