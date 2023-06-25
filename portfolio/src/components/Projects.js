@@ -11,7 +11,7 @@ function Projects() {
             key={project.id}
           >
             <div className="image-container">
-              <img src={project.src} alt={project.name} />
+              <img className="zoomable-image" src={project.src} alt={project.name} />
               <div
                 className={`proj-box-style${
                   project.id % 2 === 0 ? "Even" : "Odd"
@@ -24,21 +24,27 @@ function Projects() {
                   <div>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
-                    <a className='demo-link' href={project.link}>Behance ↗</a>
+                    <a className="demo-link" href={project.link}>
+                      Behance ↗
+                    </a>
                   </div>
                 ) : (
-                    <div>
-                      <h3>{project.name}</h3>
-                      <p>{project.description}</p>
-                      <ul className="flex demo-links">
-              <li>
-                <a className="demo-link" href={project.link}>Live ↗</a>
-              </li>
-              <li>
-                <a className="demo-link" href={project.link2}>Github ↗</a>
-              </li>
-            </ul>
-                    </div>
+                  <div>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                    <ul className="flex demo-links">
+                      <li>
+                        <a className="demo-link" href={project.link}>
+                          Live ↗
+                        </a>
+                      </li>
+                      <li>
+                        <a className="demo-link" href={project.link2}>
+                          Github ↗
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 )}
               </div>
             </div>

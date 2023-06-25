@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer flex container">
             <p>deguia.anncatherine@gmail.com</p>
         </footer>
     )

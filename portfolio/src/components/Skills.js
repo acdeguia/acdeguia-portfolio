@@ -13,6 +13,10 @@ function Skills() {
                         </div>
                     ))}
                 </div>
+                <center>
+                    <br /><br /><br /><br />
+                    <div>pagination conatiner</div>
+                </center>
             </div>
         </section>
     )
