@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useContext } from 'react';
+
+import { ThemeContext } from './contexts/ThemeContext';
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -8,13 +10,12 @@ import MoreInfo from "./components/MoreInfo";
 import Footer from "./components/Footer";
 
 
-
-
 function App() {
 
+  const { lightMode } = useContext(ThemeContext);
 
   return (
-    <div className="App">
+    <div className={` App content ${lightMode ? 'light-mode' : ''}`}>
       <Header />
       <Hero />
       <Skills />

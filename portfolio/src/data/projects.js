@@ -18,10 +18,10 @@ export const projects = [
 ]
 
 export const moreProjects = [
-    {id: '1', src:memorycard, link:'https://acdeguia.github.io/CV-app/', name: 'Memory Card Game'},
-    {id: '2', src:tictactoe, link:'https://acdeguia.github.io/CV-app/', name: 'Tic-Tac-Toe'},
-    {id: '3', src:mylibrary, link:'https://acdeguia.github.io/CV-app/', name: 'My Library'},
-    {id: '4', src:signup, link:'https://acdeguia.github.io/CV-app/', name: 'Mock-up Sign Up Form'},
-    {id: '5', src:calculator, link:'https://acdeguia.github.io/CV-app/', name: 'Calculator'},
-    {id: '6', src:weatherforecast, link:'https://acdeguia.github.io/CV-app/', name: 'Weather Forecast'},
+    {id: '1', src:memorycard, link:'https://acdeguia.github.io/memory-game/', link2:'https://github.com/acdeguia/memory-game', name: 'Memory Card Game'},
+    {id: '2', src:tictactoe, link:'https://acdeguia.github.io/tic-tac-toe/',link2:'https://github.com/acdeguia/tic-tac-toe', name: 'Tic-Tac-Toe'},
+    {id: '3', src:mylibrary, link:'https://acdeguia.github.io/my-library/', link2:'https://github.com/acdeguia/my-library', name: 'My Library'},
+    {id: '4', src:signup, link:'https://acdeguia.github.io/sign-up-form/', link2:'https://github.com/acdeguia/sign-up-form', name: 'Mock-up Sign Up Form'},
+    {id: '5', src:calculator, link:'https://acdeguia.github.io/calculator/', link2:'https://github.com/acdeguia/calculator', name: 'Calculator'},
+    {id: '6', src:weatherforecast, link:'https://acdeguia.github.io/weather-app/', link2:'https://github.com/acdeguia/weather-app', name: 'Weather Forecast'},
 ]

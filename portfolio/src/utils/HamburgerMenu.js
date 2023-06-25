@@ -28,9 +28,6 @@ const HamburgerMenu = () => {
       <div className="hamburger-menu" ref={menuRef}>
         <img src={menu} alt="menu" />
         <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
         <div className={`menu ${menuOpen ? "show" : ""}`}>
           <ul>

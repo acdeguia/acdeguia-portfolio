@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { moreProjects } from "../data/projects";
 
 function MoreInfo() {
@@ -11,7 +13,7 @@ function MoreInfo() {
       <div className="moreProj-container">
         {moreProjects.map((project) => (
           <div>
-            <img className="zoomable-image" src={project.src} alt="{project.name}" />
+            <img className="zoomable-image more-proj" src={project.src} alt="{project.name}" />
             <div className="more-proj-desc flex">
               <p>{project.name}</p>
               <ul className="flex demo-links">
@@ -26,7 +28,7 @@ function MoreInfo() {
           </div>
         ))}
       </div>
-      <button className="btn more">View More</button>
+      <button className="btn more"><Link className="more-a" to='/projects'>View More</Link></button>
     </section>
   );
 }
