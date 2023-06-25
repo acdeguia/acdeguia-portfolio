@@ -200,18 +200,20 @@ code {
 #root,
 .social-media_links,
 .social-media_links ul,
-.hero-section,
+.container,
 .vertical,
 .hero-main,
-.left-main, .scroll-arrow {
+.left-main, .scroll-arrow, .skills-container, .skill {
   display: flex;
 }
 
 .app,
 #root,
-.social-media_links ul, .scroll-arrow  {
+.social-media_links ul, .scroll-arrow, .skills-section, .skill  {
   flex-direction: column;
 }
+
+
 
 .arrow-container {
   flex-direction: column;
@@ -297,8 +299,7 @@ input:checked + .slider:before {
 /* HERO STYLES */
 
 .hero-section {
-  padding: 0 300px;
-  margin-top: 100px;
+margin: 150px 0;
 }
 
 .social-media_links {
@@ -327,7 +328,7 @@ input:checked + .slider:before {
   margin: 0 auto;
 }
 
-.hero-section {
+.container {
   justify-content: space-between;
 }
 
@@ -417,7 +418,7 @@ input:checked + .slider:before {
   width: 30px;
   height: 30px;
   transform: rotate(45deg);
-  animation: scrollArrow 1.5s infinite ease-in-out alternate;
+  animation: scrollArrow 1000ms infinite ease-in-out alternate;
 }
 
 @keyframes underline {
@@ -446,4 +447,106 @@ input:checked + .slider:before {
   height: 2px;
   background-color: var(--heading-color);
   animation: underline 2s ease-in-out forwards;
+}
+
+/* global styles */
+
+.header_2 {
+  color: var(--heading-color);
+  font-size: 46.88px;
+font-family: "Justus Versalitas";
+}
+
+.container {
+  padding: 0 300px;
+
+}
+
+.bold {
+  font-family: Mulish;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+
+/* .App {
+  max-width: 1800px;
+  justify-content: center;
+} */
+
+/* skills section styles */
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-section {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.skills-container {
+margin-top: 70px;
+gap: 24px;
+white-space: nowrap;
+}
+
+.skill {
+  padding: 5px 5px;
+  display: flex;
+  gap: 10px !important;
+  align-items: center;
+  border: 1px solid var(--heading-color);
+  width: 130px;
+  height: 130px;
+  color: var(--primary-color);
+  font: 400 19.2px "Mulish", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-container {
+  display: flex;
+
+  animation: carousel-slide 15s linear infinite;
+}
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(-20%);
+  }
+  33% {
+    transform: translateX(-20%);
+  }
+  40% {
+    transform: translateX(-40%);
+  }
+  43% {
+    transform: translateX(-40%);
+  }
+  60% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.skills-container > .skill {
+  flex: 0 0 130px;
+  /* Optional: Add transition for smoother visual effect */
+  transition: transform 0.3s ease;
 }

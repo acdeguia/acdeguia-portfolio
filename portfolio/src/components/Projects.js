@@ -2,7 +2,7 @@ import { projects } from "../data/projects"
 
 function Projects() {
     return(
-        <section>
+        <section >
             <h2>Deign and Coding Projects</h2>
             <div>
                 {projects.map((project) => (

@@ -11,15 +11,15 @@ import adobeIllustrator from '../assets/skills/html.png'
 
 const skills = [
     {id:'1', src: html, name:"HTML"},
-    {id:'1', src: css, name:"CSS"},
-    {id:'1', src: js, name:"JAVASCRIPT"},
-    {id:'1', src: webpack, name:"WEBPACK"},
-    {id:'1', src: react, name:"REACT"},
-    {id:'1', src: git, name:"GIT"},
-    {id:'1', src: firebase, name:"FIREBASE"},
-    {id:'1', src: figma, name:"FIGMA"},
-    {id:'1', src: adobeXd, name:"ADOBE XD"},
-    {id:'1', src: adobeIllustrator, name:"ADOBE ILLUSTRATOR"},
+    {id:'2', src: css, name:"CSS"},
+    {id:'3', src: js, name:"JAVASCRIPT"},
+    {id:'4', src: webpack, name:"WEBPACK"},
+    {id:'5', src: react, name:"REACT"},
+    {id:'6', src: git, name:"GIT"},
+    {id:'7', src: firebase, name:"FIREBASE"},
+    {id:'8', src: figma, name:"FIGMA"},
+    {id:'9', src: adobeXd, name:"ADOBE XD"},
+    {id:'10', src: adobeIllustrator, name:"ILLUSTRATOR"}
 ]
 
 export default skills

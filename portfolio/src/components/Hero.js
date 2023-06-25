@@ -9,7 +9,7 @@ import behanceicon from "../assets/behance.svg";
 
 function Hero() {
   return (
-    <section className="hero-section">
+    <section className="container hero-section">
       <div className="left-main">
         <div className="social-media_links">
           <ul>
@@ -37,8 +37,8 @@ function Hero() {
             <h1 className="underline">Ann Catherine</h1>
           </div>
           <p>
-            I’m an aspiring <span>Frontend Web Developer</span> and a{" "}
-            <span>UX/UI Designer</span> who is ambitious, passionate, and
+            I’m an aspiring <span className="bold">Frontend Web Developer</span> and a{" "}
+            <span className="bold">UX/UI Designer</span> who is ambitious, passionate, and
             committed to personal growth.
           </p>
           <button className="btn resume-btn"><span>Download Resume</span></button>
