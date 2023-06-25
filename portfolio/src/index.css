@@ -203,24 +203,25 @@ code {
 .container,
 .vertical,
 .hero-main,
-.left-main, .scroll-arrow, .skills-container, .skill {
+.left-main,
+.scroll-arrow,
+.skills-container,
+.skill,
+.projects-section,
+.project,
+.project div,.project-container {
   display: flex;
 }
 
 .app,
 #root,
-.social-media_links ul, .scroll-arrow, .skills-section, .skill  {
+.social-media_links ul,
+.scroll-arrow,
+.skills-section,
+.skill,
+.projects-section,
+.project div, .project-container {
   flex-direction: column;
-}
-
-
-
-.arrow-container {
-  flex-direction: column;
-}
-
-.arrow-container {
-  width: 30px;
 }
 
 li {
@@ -234,8 +235,6 @@ li {
   color: var(--heading-color);
   font-size: 37.5px;
 }
-
-
 
 .header {
   justify-content: space-between;
@@ -299,7 +298,7 @@ input:checked + .slider:before {
 /* HERO STYLES */
 
 .hero-section {
-margin: 150px 0;
+  margin: 150px 0;
 }
 
 .social-media_links {
@@ -375,9 +374,6 @@ margin: 150px 0;
   color: var(--bg-color);
 }
 
-.image-container {
-  position: relative;
-}
 
 
 .box-style {
@@ -393,7 +389,6 @@ margin: 150px 0;
 .main-hero_right {
   position: relative;
 }
-
 
 @keyframes scrollArrow {
   0% {
@@ -426,10 +421,10 @@ margin: 150px 0;
     width: 0;
   }
   50% {
-    width: calc(100% - 2em); 
+    width: calc(100% - 2em);
   }
   100% {
-    width: calc(100% - 2em); 
+    width: calc(100% - 2em);
   }
 }
 
@@ -454,12 +449,11 @@ margin: 150px 0;
 .header_2 {
   color: var(--heading-color);
   font-size: 46.88px;
-font-family: "Justus Versalitas";
+  font-family: "Justus Versalitas";
 }
 
 .container {
   padding: 0 300px;
-
 }
 
 .bold {
@@ -468,6 +462,9 @@ font-family: "Justus Versalitas";
   color: var(--heading-color);
 }
 
+.image-container {
+  position: relative;
+}
 
 /* .App {
   max-width: 1800px;
@@ -477,7 +474,8 @@ font-family: "Justus Versalitas";
 /* skills section styles */
 
 .carousel-container {
-  width: 100%;
+  max-width: 1054px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -488,9 +486,11 @@ font-family: "Justus Versalitas";
 }
 
 .skills-container {
-margin-top: 70px;
-gap: 24px;
-white-space: nowrap;
+  margin-top: 70px;
+  gap: 24px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill {
@@ -507,14 +507,8 @@ white-space: nowrap;
   text-align: center;
 }
 
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-}
-
 .skills-container {
   display: flex;
-
   animation: carousel-slide 15s linear infinite;
 }
 
@@ -549,4 +543,72 @@ white-space: nowrap;
   flex: 0 0 130px;
   /* Optional: Add transition for smoother visual effect */
   transition: transform 0.3s ease;
+}
+
+/* Project section styles */
+
+.projects-section {
+  margin: 120px 0;
+  align-items: center;
+}
+
+.project-container {
+  margin-top: 85px;
+  gap: 150px;
+}
+
+.project {
+  gap: 70px;
+}
+
+.project div {
+  gap: 20px;
+
+}
+
+.project div h3 {
+  font-size: 33px;
+  font-family: "Justus Versalitas";
+  color: var(--heading-color);
+}
+
+.project div p {
+  font-size: 19.2px;
+font-family: 'Mulish';
+line-height: 35px;
+color: var(--primary-color);
+max-width: 500px;
+}
+
+
+.proj-box-styleOdd {
+  position: absolute;
+  border: 2px solid #ff6e4a;
+  width: 503.219px;
+height: 311.777px;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+}
+
+.proj-box-styleEven {
+  position: absolute;
+  border: 2px solid #ff6e4a;
+  width: 503.219px;
+height: 311.777px;
+  top: 20px;
+  right: 20px;
+  z-index: -1;
+}
+
+.even {
+  flex-direction: row-reverse;
+}
+
+.linkBehance::before {
+  content: "Behance ↗";
+}
+
+.linkGithub::before {
+  content: "Live ↗";
 }
