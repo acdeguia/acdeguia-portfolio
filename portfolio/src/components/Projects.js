@@ -19,15 +19,28 @@ function Projects() {
               ></div>
             </div>
             <div>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <a href={project.link}>
-                <p
-                  className={`link${project.id === "1" || project.id === '2' ? "Behance" : "Github"}`}
-                ></p>
-              </a>
-                
-              
+              <div>
+                {project.id === "1" || project.id === "2" ? (
+                  <div>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                    <a className='demo-link' href={project.link}>Behance ↗</a>
+                  </div>
+                ) : (
+                    <div>
+                      <h3>{project.name}</h3>
+                      <p>{project.description}</p>
+                      <ul className="flex demo-links">
+              <li>
+                <a className="demo-link" href={project.link}>Live ↗</a>
+              </li>
+              <li>
+                <a className="demo-link" href={project.link2}>Github ↗</a>
+              </li>
+            </ul>
+                    </div>
+                )}
+              </div>
             </div>
           </div>
         ))}
