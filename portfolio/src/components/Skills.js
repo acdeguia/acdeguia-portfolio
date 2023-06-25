@@ -15,7 +15,7 @@ function Skills() {
                 </div>
                 <center>
                     <br /><br /><br /><br />
-                    <div>pagination conatiner</div>
+                    {/* <div>pagination conatiner</div> */}
                 </center>
             </div>
         </section>

@@ -529,7 +529,7 @@ input:checked + .slider:before {
   }
 
   100% {
-    transform: translateX(1-00%);
+    transform: translateX(-100%);
   }
 }
 
@@ -693,4 +693,295 @@ margin-top: 50px;
   color: var(--heading-color);
   font-size: 30px;
   padding: 40px 0;
+}
+
+
+
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  height: 200px;
+  background-color: var(--heading-color);
+  width: 5px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  background-color: var(--heading-color);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: var(--heading-color);
+
+}
+
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: block;
+  height: 100px;
+  width: 395px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 341.92px;
+  }
+
+  .header {
+    padding: 31px 0 0 0;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 30%;
+    top: 20px;
+  }
+
+  #menu {
+    position: absolute;
+    right: 10px;
+  }
+
+  
+
+ .header-li, .switch {
+  display: none;
+ }
+  .carousel-container {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skills-container {
+    margin-top: 70px;
+    gap: 24px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    padding: 0 32px;
+  }
+.hero-section {
+  margin: 25px !important;
+  margin-bottom: 100px !important;
+  margin-top: 50px !important;
+}
+  .hero-section, .hero_gap {
+    flex-direction: column;
+  }
+
+  .App, #root {
+    min-width: 100%;
+  }
+
+  .image-container, .social-media_links {
+    display: none;
+  }
+
+  .hero_gap{
+    gap: 0;
+  }
+.header_2{
+  font-size: 26px;
+}
+  .scroll-arrow {
+left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    animation: scrollArrow 1000ms infinite ease-in-out alternate;
+  }
+
+  .hero-main {
+    align-items: center;
+    justify-content: center;
+    gap: 23.9px;
+  }
+
+  .main-hero_right {
+    height: 10px;
+  }
+
+  @keyframes underline {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: calc(100%);
+    }
+  }
+
+  .projects-section {
+    padding: 0;
+    margin: 0 16px;
+  }
+
+  .project-container {
+    margin: 30px 0;
+    gap: 40px !important;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .proj-box-styleOdd {
+    width: 330px;
+  height: 205px;
+  }
+
+  .proj-box-styleEven {
+    width: 330px;
+  height: 205px;
+  }
+
+  .project-descip{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-container {
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .moreProj-container div {
+    gap: 5px;
+  }
+
+.more-proj-desc {
+  gap: 2px !important;
+}
+  .more-proj-desc p{
+    margin: 0 !important;
+  }
+
+   .moreInfo-section {
+    margin-bottom: 50px;
+  }
+
+  .moreInfo-section p {
+    font-size: 13.5px;
+    line-height: 23px;
+    margin: 25px 0;
+  }
+
+  .footer {
+    font-size: 19.2px;
+    padding: 20px 0;
+  }
+
+  .project-descip h3{
+    font-size: 20.384px !important;
+  }
+  .project-descip p{
+    font-size: 13.046px !important;
+line-height: 23.782px !important;
+  }
+
+  .demo-link {
+    font-size: 13.046px !important;
+  }
+
+  .hamburger-nemu-container {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+
+  .hero-main p {
+    font-size: 14.567px;
+    line-height: 29.133px;
+  }
+
+  .hero-main h1 {
+    font-size: 35.562px;
+  }
+
+  .resume-btn, .more{
+    font-size: 14.567px;
+    height: fit-content;
+    padding: 4.86px;
+  }
+
+  .scroll-arrow img {
+    width: 18px;
+    height: auto;
+  }
+
+ .skill img {
+    width: 33.2px;
+    height: auto;
+  }
+
+  .skill {
+    height: 86.31px;
+    width: auto;
+  }
+
+  .skill p {
+    font-size: 12.747px;
+  }
+
+}
+@media (min-width: 768px) {
+  .hamburger-nemu-container {
+    display: none;
+  }
 }

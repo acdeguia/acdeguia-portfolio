@@ -1,3 +1,5 @@
+import HamburgerMenu from "../utils/HamburgerMenu";
+
 function Header() {
   return (
     <header className="header">
@@ -10,6 +12,7 @@ function Header() {
         <input type="checkbox" id="dark-light__mode" />
         <span class="slider"></span>
       </label>
+      <HamburgerMenu/>
     </header>
   );
 }
