@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import HamburgerMenu from "../utils/HamburgerMenu";
-import { ThemeContext } from '../contexts/ThemeContext';
+
 import { Link } from "react-router-dom";
+import Theme from '../utils/Theme';
 
 function Header() {
-  const { lightMode, toggleLightMode } = useContext(ThemeContext);
+
 
   return (
     <header className="header">
@@ -15,11 +16,14 @@ function Header() {
         <li><Link className='demo-link' to="/">HOME</Link></li>
         <li><Link className='demo-link' to="/projects">PROJECTS</Link></li>
       </ul>
-      <div className={` ${lightMode ? 'light-mode' : ''}`}>
+      {/* <div className={` ${lightMode ? 'light-mode' : ''}`}>
         <label className="switch">
           <input type="checkbox" checked={lightMode} onChange={toggleLightMode} />
           <span className="slider"></span>
         </label>
+      </div> */}
+      <div className="theme-container"> 
+        <Theme />
       </div>
       <HamburgerMenu/>
     </header>

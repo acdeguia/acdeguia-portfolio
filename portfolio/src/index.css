@@ -474,7 +474,7 @@ input:checked + .slider:before {
   position: absolute;
   bottom: 20px;
   top: 75%;
-  right: 25%;
+  right: 50px;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -785,7 +785,7 @@ input:checked + .slider:before {
 
 .menu.show {
   display: block;
-  background-color: var(--primary-color);
+  background-color: var(--heading-color);
   position: absolute;
   right: 0;
   top: -20px;
@@ -812,6 +812,10 @@ input:checked + .slider:before {
 
 .element {
   animation: transformAnimation 1s ease-in-out;
+}
+
+.toggleThemeMenu {
+
 }
 
 /* responsiveness */
@@ -845,12 +849,11 @@ input:checked + .slider:before {
   }
 
   .menu.show {
-    height: 100px;
-    width: 395px;
+    height: 500px;
+    width: 100vw;
   }
 
-  .header-li,
-  .switch {
+  .header-li, .theme-container {
     display: none;
   }
   .carousel-container {
@@ -860,7 +863,9 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
   }
-
+.toggleThemeMenu{
+  position: absolute;
+}
   .skills-container {
     margin-top: 70px;
     gap: 24px;
@@ -868,17 +873,18 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
   }
-  .container {
+  /* .container {
     padding: 0 32px;
-  }
+  } */
+
   .hero-section {
-    margin: 25px !important;
-    margin-bottom: 100px !important;
-    margin-top: 50px !important;
+    margin: 50px 0 50px 0 !important;
+
   }
   .hero-section,
   .hero_gap {
     flex-direction: column;
+    padding: 0 25px;
   }
 
   .App,
@@ -916,6 +922,10 @@ input:checked + .slider:before {
     height: 10px;
   }
 
+  .content {
+    padding: 0;
+  }
+
   @keyframes underline {
     0% {
       width: 0;
@@ -927,7 +937,8 @@ input:checked + .slider:before {
 
   .projects-section {
     padding: 0;
-    margin: 0 16px;
+    margin: 0 ;
+    padding: 25px;
   }
 
   .project-container {
@@ -975,6 +986,7 @@ input:checked + .slider:before {
 
   .moreInfo-section {
     margin-bottom: 50px;
+    padding: 25px;
   }
 
   .moreInfo-section p {
@@ -1001,9 +1013,8 @@ input:checked + .slider:before {
   }
 
   .hamburger-nemu-container {
-    position: absolute;
-    right: 30px;
-    top: 25px;
+ margin-right: 25px;
+ 
   }
 
   .hero-main p {
@@ -1041,6 +1052,8 @@ input:checked + .slider:before {
     font-size: 12.747px;
   }
 }
+
+
 @media only screen and (min-width: 992px) {
   .hamburger-nemu-container {
     display: none;
@@ -1288,3 +1301,6 @@ input:checked + .slider:before {
   }
 }
 
+.theme-container {
+  z-index: 9999;
+}
