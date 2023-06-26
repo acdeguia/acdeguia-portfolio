@@ -7,6 +7,7 @@ function Projects() {
   return (
     <section className="container projects-section">
       <h2 className="header_2">Design and Coding Projects</h2>
+      <p>I worked on a bunch of design and coding projects during my college. Some I did on my own, and others I tackled with a team. These projects were either part of my coursework or because I was motivated to learn more.</p>
       <div className="project-container">
   {projects.map((project) => {
     const isOddProject = project.id % 2 === 1;
