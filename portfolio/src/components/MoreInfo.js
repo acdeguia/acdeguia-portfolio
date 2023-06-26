@@ -28,7 +28,7 @@ function MoreInfo() {
           </div>
         ))}
       </div>
-      <button className="btn more"><Link className="more-a" to='/projects'>View More</Link></button>
+      {/* <button className="btn more"><Link className="more-a" to='/projects'>View More</Link></button> */}
     </section>
   );
 }

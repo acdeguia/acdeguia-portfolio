@@ -13,8 +13,8 @@ function Header() {
         <p className="logo">acdeguia.</p>
       </Link>
       <ul className="header-li demo-links">
-        <li><Link className='demo-link' to="/">HOME</Link></li>
-        <li><Link className='demo-link' to="/projects">PROJECTS</Link></li>
+        {/* <li><Link className='demo-link' to="/">HOME</Link></li> */}
+        {/* <li><Link className='demo-link' to="/projects">PROJECTS</Link></li> */}
       </ul>
       {/* <div className={` ${lightMode ? 'light-mode' : ''}`}>
         <label className="switch">
