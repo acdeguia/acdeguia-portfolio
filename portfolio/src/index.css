@@ -1018,7 +1018,7 @@ input:checked + .slider:before {
     padding: 25px;
   }
 
-  .moreInfo-section p {
+  .moreInfo-section p, .projects-section p {
     font-size: 13.5px;
     line-height: 23px;
     margin: 25px 0;
