@@ -578,7 +578,11 @@ input:checked + .slider:before {
 
 @keyframes carousel-slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(50%);
   }
 
   100% {
@@ -678,7 +682,7 @@ input:checked + .slider:before {
   transform: scaleX(1);
 }
 
-.projects-section p{
+.projects-section > p{
   margin-top: 80px;
   text-align: justify;
   font-size: 19.2px;
