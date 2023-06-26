@@ -72,12 +72,12 @@ const HamburgerMenu = () => {
         <div className={`menu ${menuOpen ? "show" : ""}`}>
           <ul>
             <li className="menu-li">
-              <Link className="menu-a" to="#">
+              <Link className="menu-a" to="/">
                 Home
               </Link>
             </li>
             <li className="menu-li">
-              <Link className="menu-a" to="#">
+              <Link className="menu-a" to="/projects">
                 Projects
               </Link>
             </li>

@@ -6,7 +6,7 @@ function Theme() {
     const { lightMode, toggleLightMode } = useContext(ThemeContext);
 
     return(
-        <div className={` toggleThemeMenu ${lightMode ? 'light-mode' : ''}`}>
+        <div className={` toggleThemeMenu flex ${lightMode ? 'light-mode' : ''}`}>
         <label className="switch">
           <input type="checkbox" checked={lightMode} onChange={toggleLightMode} />
           <span className="slider"></span>
