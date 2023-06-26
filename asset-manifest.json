@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/acdeguia-portfolio/static/css/main.86cb7c9e.css",
+    "main.css": "/acdeguia-portfolio/static/css/main.cabb6dc7.css",
     "main.js": "/acdeguia-portfolio/static/js/main.6b28050e.js",
     "static/media/under-construction.png": "/acdeguia-portfolio/static/media/under-construction.348e797120363c32a00e.png",
     "static/media/sagiptubig.png": "/acdeguia-portfolio/static/media/sagiptubig.2e7e257508fe3380ad11.png",
@@ -23,11 +23,11 @@
     "static/media/github.svg": "/acdeguia-portfolio/static/media/github.f7862928880c17bcdfeed0dda9b7e6a4.svg",
     "index.html": "/acdeguia-portfolio/index.html",
     "static/media/linkedin.svg": "/acdeguia-portfolio/static/media/linkedin.7611cc4b19f3bad297c7381bd5a50b66.svg",
-    "main.86cb7c9e.css.map": "/acdeguia-portfolio/static/css/main.86cb7c9e.css.map",
+    "main.cabb6dc7.css.map": "/acdeguia-portfolio/static/css/main.cabb6dc7.css.map",
     "main.6b28050e.js.map": "/acdeguia-portfolio/static/js/main.6b28050e.js.map"
   },
   "entrypoints": [
-    "static/css/main.86cb7c9e.css",
+    "static/css/main.cabb6dc7.css",
     "static/js/main.6b28050e.js"
   ]
 }
