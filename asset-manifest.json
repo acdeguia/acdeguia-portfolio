@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/acdeguia-portfolio/static/css/main.0995ca6d.css",
-    "main.js": "/acdeguia-portfolio/static/js/main.dc8a4402.js",
+    "main.css": "/acdeguia-portfolio/static/css/main.0337b2e3.css",
+    "main.js": "/acdeguia-portfolio/static/js/main.a4acc7da.js",
+    "static/media/under-construction.png": "/acdeguia-portfolio/static/media/under-construction.348e797120363c32a00e.png",
     "static/media/sagiptubig.png": "/acdeguia-portfolio/static/media/sagiptubig.2e7e257508fe3380ad11.png",
     "static/media/greenoasis.png": "/acdeguia-portfolio/static/media/greenoasis.d41aab202ac0a7e409df.png",
     "static/media/ilungs.png": "/acdeguia-portfolio/static/media/ilungs.f353242ed6bfdf5659e8.png",
@@ -10,21 +11,23 @@
     "static/media/cvapp.png": "/acdeguia-portfolio/static/media/cvapp.99838b12578ca87d98c1.png",
     "static/media/weatherforecast.png": "/acdeguia-portfolio/static/media/weatherforecast.0a7def9cccdfac9e01c8.png",
     "static/media/myImage.png": "/acdeguia-portfolio/static/media/myImage.700c6dd9901863349cb6.png",
+    "static/media/shopping.png": "/acdeguia-portfolio/static/media/shopping.5a34d9930805b4815183.png",
     "static/media/Justus-Roman.woff": "/acdeguia-portfolio/static/media/Justus-Roman.856abc03aba9fc15c5c5.woff",
     "static/media/Justus-Oldstyle.woff": "/acdeguia-portfolio/static/media/Justus-Oldstyle.06903c51d7c62d878070.woff",
     "static/media/Justus-ItalicOldstyle.woff": "/acdeguia-portfolio/static/media/Justus-ItalicOldstyle.588604d1fb3eaec47076.woff",
     "static/media/Justus-Italic.woff": "/acdeguia-portfolio/static/media/Justus-Italic.be424a1e3a40fbd858de.woff",
     "static/media/Justus-Versalitas.woff": "/acdeguia-portfolio/static/media/Justus-Versalitas.9a5795c5950ce9d2d603.woff",
     "static/media/Justus-Bold.woff": "/acdeguia-portfolio/static/media/Justus-Bold.c9ebd66b6c4af758ba52.woff",
+    "static/media/rps.png": "/acdeguia-portfolio/static/media/rps.68660628db29e824ae12.png",
     "static/media/behance.svg": "/acdeguia-portfolio/static/media/behance.f99104f02c069ef281ae1a13e0ed2f25.svg",
     "static/media/github.svg": "/acdeguia-portfolio/static/media/github.f7862928880c17bcdfeed0dda9b7e6a4.svg",
     "index.html": "/acdeguia-portfolio/index.html",
     "static/media/linkedin.svg": "/acdeguia-portfolio/static/media/linkedin.7611cc4b19f3bad297c7381bd5a50b66.svg",
-    "main.0995ca6d.css.map": "/acdeguia-portfolio/static/css/main.0995ca6d.css.map",
-    "main.dc8a4402.js.map": "/acdeguia-portfolio/static/js/main.dc8a4402.js.map"
+    "main.0337b2e3.css.map": "/acdeguia-portfolio/static/css/main.0337b2e3.css.map",
+    "main.a4acc7da.js.map": "/acdeguia-portfolio/static/js/main.a4acc7da.js.map"
   },
   "entrypoints": [
-    "static/css/main.0995ca6d.css",
-    "static/js/main.dc8a4402.js"
+    "static/css/main.0337b2e3.css",
+    "static/js/main.a4acc7da.js"
   ]
 }
