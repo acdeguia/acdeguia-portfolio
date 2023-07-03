@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/acdeguia-portfolio/static/css/main.a5d7dea2.css",
-    "main.js": "/acdeguia-portfolio/static/js/main.2c50e2e0.js",
+    "main.css": "/acdeguia-portfolio/static/css/main.c35f9b25.css",
+    "main.js": "/acdeguia-portfolio/static/js/main.4ff4c3a9.js",
     "static/media/under-construction.png": "/acdeguia-portfolio/static/media/under-construction.348e797120363c32a00e.png",
     "static/media/sagiptubig.png": "/acdeguia-portfolio/static/media/sagiptubig.2e7e257508fe3380ad11.png",
     "static/media/greenoasis.png": "/acdeguia-portfolio/static/media/greenoasis.d41aab202ac0a7e409df.png",
@@ -26,11 +26,11 @@
     "static/media/github.svg": "/acdeguia-portfolio/static/media/github.f7862928880c17bcdfeed0dda9b7e6a4.svg",
     "index.html": "/acdeguia-portfolio/index.html",
     "static/media/linkedin.svg": "/acdeguia-portfolio/static/media/linkedin.7611cc4b19f3bad297c7381bd5a50b66.svg",
-    "main.a5d7dea2.css.map": "/acdeguia-portfolio/static/css/main.a5d7dea2.css.map",
-    "main.2c50e2e0.js.map": "/acdeguia-portfolio/static/js/main.2c50e2e0.js.map"
+    "main.c35f9b25.css.map": "/acdeguia-portfolio/static/css/main.c35f9b25.css.map",
+    "main.4ff4c3a9.js.map": "/acdeguia-portfolio/static/js/main.4ff4c3a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5d7dea2.css",
-    "static/js/main.2c50e2e0.js"
+    "static/css/main.c35f9b25.css",
+    "static/js/main.4ff4c3a9.js"
   ]
 }
