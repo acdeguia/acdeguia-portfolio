@@ -1,26 +1,12 @@
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .respo img {
-      width: 106.524px;
-      height: auto !important;
-    }
-  
-    .respo {
-      position: absolute !important;
-      right: 20px !important;
-    }
-  
-    .box-style {
-      position: absolute;
-      border: 2px solid var(--heading-color);
-      width: 135px;
-      height: 135px;
-      top: 10px;
-      left: 10px;
-      z-index: 0;
-    }
-  
+
+    body {
+        align-items: center;
+        justify-content: center;
+      }
+
     .header {
       padding: 31px 0 0 0;
       position: relative;
@@ -39,23 +25,18 @@
     li.menu-li.toggle {
       width: fit-content;
     }
-    .menu.show {
-      position: absolute;
-      right: -53px;
-      top: -60px;
-      height: 150px;
-      width: 110vw;
-      z-index: 1;
-    }
-    .menu-li {
-      margin: 0 auto;
-      width: fit-content;
-    }
+
   
-    .header-li,
-    .theme-container {
+    .header-li {
       display: none;
     }
+
+    .toggleThemeMenu {
+        position: absolute;
+        left: -75px;
+        top: 30px;
+    
+      }
   
     .carousel-container {
       max-width: 90%;
@@ -72,49 +53,25 @@
       align-items: center;
       justify-content: center;
     }
-    .container {
-      padding: 0 32px;
-    }
+    
     .hero-section {
-      margin: 25px !important;
+      margin: 0 !important;
       margin-bottom: 100px !important;
       margin-top: 100px !important;
-      padding: 0 15px 0 0px !important;
+      padding: 0 !important;
     }
+
     .hero-section {
       flex-direction: column;
     }
-  
-    .App,
-    #root {
-      min-width: 100%;
-    }
-  
-    .respo {
-      position: relative;
-    }
-  
-    .respo img {
-      position: relative;
-      width: 106.52px;
-      height: auto;
-      z-index: 1;
-    }
-  
-    .box-style {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 106.52px;
-      height: 106.52px;
-      z-index: 0;
-    }
-  
+  .social-media_links {
+    padding: 0;
+  }
     .hero_gap {
       gap: 0;
     }
     .header_2 {
-      font-size: 32px;
+      font-size: 40px;
       margin-bottom: 50px !important;
     }
   
@@ -123,7 +80,7 @@
     }
   
     .hero-main {
-      gap: 40px;
+      gap: 60px;
     }
   
     @keyframes underline {
@@ -190,7 +147,7 @@
     }
   
     .moreInfo-section p {
-      font-size: 19.2px;
+      font-size: 21px;
       line-height: 35px;
       margin: 32px 0;
     }
@@ -204,18 +161,19 @@
       font-size: 37px !important;
     }
     .project-descip p {
-      font-size: 19.2px !important;
+      font-size: 21px !important;
       line-height: 35px !important;
     }
   
     .demo-link {
-      font-size: 19.2px !important;
+      font-size: 21px !important;
     }
   
   
   .projects-section p {
     margin-top: 0;
     margin-bottom: 30px;
+    font-size: 21px;
   }
   
     .hamburger-nemu-container {
@@ -239,6 +197,11 @@
       font-size: 23.672px;
       height: fit-content;
       padding: 10px;
+    }
+
+    .scroll-arrow {
+        position: absolute;
+        left: -120px;
     }
   
     .scroll-arrow img {
@@ -264,16 +227,16 @@
     .skills-section {
       justify-content: center;
       align-items: center;
-      padding-top: 20px;
+      padding-top: 22px;
       margin-bottom: 100px;
     }
   
     .skill {
-      padding: 5px 5px;
+      padding: 2px 5px;
     }
   
     .skill p {
-      font-size: 19.2px;
+      font-size: 20px;
     }
   }
   
@@ -305,7 +268,6 @@
   }
   
   .menu.show {
-    opacity: 1;
     visibility: visible;
   }
   
@@ -314,3 +276,39 @@
   }
   
   
+  .respo {
+    position: absolute !important;
+    right: 50px !important;
+  }
+  
+  .respo img {
+    position: relative !important;
+    width: 135px !important;
+    height: auto !important;
+    z-index: 2;
+  }
+  
+  .box-style {
+    position: absolute;
+    border: 2px solid var(--heading-color);
+    width: 135px;
+    height: 135px;
+    top: 10px;
+    left: 10px;
+    z-index: 0;
+  }
+
+  .menu.show {
+    text-align: center;
+    opacity: 0.9;
+    position: absolute;
+    top: -60px;
+    right: -45px;
+    width: 162px;
+    height: 120px;
+    transition: transform 1s ease-in-out 0.25s;
+    transform: translateX(10px);
+    padding-top: 30px;
+  }
+
+
