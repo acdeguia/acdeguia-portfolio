@@ -1,0 +1,304 @@
+/* mobile */
+
+@media only screen and (max-width: 767px) {
+    body {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .image-container img {
+      width: 341.92px;
+    }
+  
+    .header {
+      padding: 31px 0 0 0;
+      position: relative;
+    }
+  
+    .n {
+      text-decoration: none;
+    }
+  
+    .logo {
+      text-align: center;
+      position: absolute;
+      left: 40%;
+      top: 30px;
+      font-size: 28px;
+      font-size: 20px;
+    }
+
+
+      
+      .menu.show {
+        text-align: center;
+        opacity: 0.9;
+        position: absolute;
+        top: -35px;
+        right: -25px;
+        width: 162px;
+        height: 150px;
+        transition: transform 1s ease-in-out 0.25s;
+        transform: translateX(10px);
+      }
+  
+    .menu.show ul {
+      padding-top: 25px;
+    }
+  
+    a.menu-a {
+     font-size: 20px !important;
+    }
+  
+    li.menu-li.toggle {
+      width: fit-content;
+      margin-left: auto;
+    }
+  
+    .header-li {
+      display: none;
+    }
+  
+    .toggleThemeMenu {
+      position: absolute;
+      left: -75px;
+      top: 30px;
+  
+    }
+  
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 46px;
+      height: 23px;
+      margin-left: 100px;
+    }
+  
+    .slider {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: solid var(--heading-color) 1px;
+    }
+    
+    .slider:before {
+      height: 18px;
+      width: 18px;
+      left: .5px;
+      bottom: 1.7px;
+    }
+
+    .more-a {
+      font-size: 14.567px;
+    }
+  
+    .hero-section {
+      margin: 50px 0 50px 0 !important;
+      padding: 0 !important;
+    }
+    
+    .hero-section,
+    .hero_gap {
+      flex-direction: column;
+      padding: 0 15px;
+      text-align: center;
+    }
+  
+    .image-container,
+    .social-media_links {
+      display: none;
+    }
+  
+    .hero_gap {
+      gap: 0;
+    }
+    .header_2 {
+      font-size: 28px;
+      margin-bottom: 40px!important;
+      line-height: 36px;
+    }
+
+    .scroll-arrow {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      transform: rotate(45deg);
+      animation: scrollArrow 1000ms infinite ease-in-out alternate;
+    }
+  
+    .hero-main {
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+    }
+  
+    .main-hero_right {
+      height: 10px;
+    }
+  
+    .content {
+      padding: 0;
+    }
+  
+    @keyframes underline {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: calc(100%);
+      }
+    }
+  
+    .projects-section {
+      padding: 0;
+      margin: 0;
+      padding: 25px;
+    }
+
+  
+    .project-container {
+      margin: 30px 0 0 0 !important;
+      gap: 40px !important;
+    }
+  
+    .project {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+    }
+  
+    .proj-box-styleOdd {
+      width: 330px;
+      height: 205px;
+    }
+  
+    .proj-box-styleEven {
+      width: 330px;
+      height: 205px;
+    }
+  
+    .project-descip {
+      justify-content: center;
+      align-items: center;
+    }
+    .custom-skill-class {
+      width: 100px !important;
+    }
+    
+    .project-container {
+      gap: 80px;
+      margin-bottom: 70px;
+    }
+  
+    .moreProj-container div {
+      gap: 5px;
+    }
+
+    .moreProj-container {
+        padding: 60px 0;
+    }
+  
+    .more-proj-desc {
+      gap: 2px !important;
+    }
+    .more-proj-desc p {
+      margin: 0 !important;
+    }
+  
+    .moreInfo-section {
+      margin-bottom: 10px;
+      padding: 25px;
+    }
+  
+    .moreInfo-section p,
+    .projects-section p {
+      font-size: 15px;
+      line-height: 23px;
+      margin: 0;
+      text-align: justify;
+    }
+  
+    .footer {
+      font-size: 19.2px;
+      padding: 20px 0;
+    }
+  
+    .project-descip h3 {
+      font-size: 25px !important;
+    }
+
+    .project-descip p {
+      font-size: 15px !important;
+      line-height: 23px !important;
+    }
+  
+    .demo-link {
+      font-size: 15px !important;
+    }
+  
+    .hamburger-nemu-container {
+      margin-right: 25px;
+    }
+  
+    .hero-main p {
+      font-size: 17px;
+      line-height: 29px;
+    }
+  
+    .hero-main h1 {
+      font-size: 35.562px;
+    }
+  
+    .resume-btn,
+    .more {
+      font-size: 14.567px;
+      height: fit-content;
+      padding: 9px 8px;
+      border: 1px solid var(--heading-color);
+    }
+  
+    .scroll-arrow img {
+      width: 18px;
+      height: auto;
+    }
+  
+  
+    .carousel-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+    .custom-skill-class {
+      width: 120px !important;
+    }
+    
+    
+    .skills-section {
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+      margin: 50px 0;
+    }
+
+    
+    .skill {
+      padding: 5px 5px;
+      gap: 1px !important;
+      width: 80px;
+      height: 80px;
+    }
+    
+  
+    .skill img {
+      max-width: 30.2px;
+      height: auto;
+      padding: 5px;
+    }
+  
+    .skill p {
+      font-size: 11.747px;
+    }
+  }

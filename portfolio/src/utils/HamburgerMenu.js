@@ -30,7 +30,7 @@ const HamburgerMenu = () => {
     <div className="hamburger-nemu-container flex">
       <div className="hamburger-menu" ref={menuRef}>
         <div
-          className={`hamburger ${menuOpen ? "open" : ""}`}
+          className={`hamburger ${menuOpen ? "show" : ""}`}
           onClick={toggleMenu}
         >
           <svg
@@ -80,9 +80,6 @@ const HamburgerMenu = () => {
               <Link className="menu-a" to="/projects">
                 Projects
               </Link>
-            </li>
-            <li className="menu-li toggle">
-              <Theme />
             </li>
           </ul>
         </div>

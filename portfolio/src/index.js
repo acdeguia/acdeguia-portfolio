@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import'./styles/mobile.css'
 import { HashRouter } from 'react-router-dom'
 import Entry from './Entry';
 import { ThemeProvider } from './contexts/ThemeContext';
