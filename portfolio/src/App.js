@@ -20,7 +20,6 @@ function App() {
       <Hero />
       <Skills />
       <Projects />
-      <MoreInfo />
       <Footer />
     </div>
   );

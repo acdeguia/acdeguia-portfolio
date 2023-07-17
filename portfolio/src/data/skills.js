@@ -6,6 +6,7 @@ import react from '../assets/skills/react.png'
 import ts from '../assets/skills/typescript.png'
 import git from '../assets/skills/git.png'
 import firebase from '../assets/skills/firebase.png'
+import jest from '../assets/skills/jest.png'
 import figma from '../assets/skills/figma.png'
 import adobeXd from '../assets/skills/xd.png'
 import adobeIllustrator from '../assets/skills/illustrator.png'
@@ -19,9 +20,10 @@ const skills = [
     {id:'6', src: ts, name:"TYPESCRIPT"}, 
     {id:'7', src: git, name:"GIT"},
     {id:'8', src: firebase, name:"FIREBASE"},
-    {id:'9', src: figma, name:"FIGMA"},
-    {id:'10', src: adobeXd, name:"ADOBE XD"},
-    {id:'11', src: adobeIllustrator, name:"ILLUSTRATOR"}
+    {id:'9', src: jest, name:"JEST"},
+    {id:'10', src: figma, name:"FIGMA"},
+    {id:'11', src: adobeXd, name:"ADOBE XD"},
+    {id:'12', src: adobeIllustrator, name:"ILLUSTRATOR"}
 ]
 
 export default skills

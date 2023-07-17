@@ -1,13 +1,19 @@
-import construction from '../assets/under-construction.png'
+import React, { useContext } from 'react';
+
+import { ThemeContext } from '../contexts/ThemeContext';
+
 import Header from '../components/Header'
+import MoreInfo from '../components/MoreInfo';
 
 function ProjectPage() {
-    return(
-        <div >
+    const { lightMode } = useContext(ThemeContext);
+
+    return (
+        <div className={` App content ${lightMode ? 'light-mode' : ''}`}>
             <Header />
-        <center><img src={construction} alt='image under construction' className='construction'/></center>
+            <MoreInfo />
         </div>
-    )
+    );
 }
 
 export default ProjectPage
