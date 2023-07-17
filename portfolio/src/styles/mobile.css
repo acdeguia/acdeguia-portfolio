@@ -36,7 +36,7 @@
         position: absolute;
         top: -35px;
         right: -25px;
-        width: 162px;
+        width: 120px;
         height: 150px;
         transition: transform 1s ease-in-out 0.25s;
         transform: translateX(10px);
@@ -200,6 +200,10 @@
     .moreProj-container {
         padding: 60px 0;
     }
+
+    .more-proj {
+      width: 350px;
+    }
   
     .more-proj-desc {
       gap: 2px !important;
@@ -211,6 +215,10 @@
     .moreInfo-section {
       margin-bottom: 10px;
       padding: 25px;
+    }
+
+    .project-name {
+      text-align: center !important;
     }
   
     .moreInfo-section p,
