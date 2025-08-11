@@ -274,7 +274,7 @@ li {
 
 .header {
   justify-content: space-between;
-  padding: 50px 300px;
+  padding: 50px 150px;
   align-items: center;
 }
 .header-li a {
@@ -339,7 +339,7 @@ input:checked + .slider:before {
 .hero-section {
   align-items: center;
   justify-content: center;
-  margin: 100px 0 250px 0;
+  margin: 60px 0 100px 0;
   flex-direction: column;
 }
 
@@ -364,7 +364,7 @@ input:checked + .slider:before {
 
 .vertical {
   width: 2px;
-  height: 234px;
+  height: 120px;
   background-color: var(--heading-color);
   margin: 0 auto;
 }
@@ -372,17 +372,17 @@ input:checked + .slider:before {
 
 .hero-main {
   flex-direction: column;
-  gap: 70px;
+  gap: 40px;
 }
 
 .hero_gap {
-  gap: 200px;
+  gap: 230px;
 }
 
 .hero-main p {
-  font-size: 30px;
+  font-size: 25px;
   font-family: Mulish;
-  line-height: 60px;
+  line-height: 50px;
   max-width: 900px;
 }
 
